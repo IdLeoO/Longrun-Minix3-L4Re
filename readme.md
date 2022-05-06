@@ -26,6 +26,8 @@ In this work simple longrun tests for L4Re and Minix3 are developed.
 
 ## Experiment
 
+* Modify `NTHREADS ` to test for different thread number
+
 ### Minix3
 
 1. Use [pkgin](https://wiki.minix3.org/doku.php?id=usersguide:installingbinarypackages) to install **clang** and **vim**
@@ -37,7 +39,7 @@ In this work simple longrun tests for L4Re and Minix3 are developed.
 3. Compile and run with
 
    ```bash
-   clang longrun.c -o longrun
+   clang longrun.c -o longrun -lmthread
    ./longrun
    ```
 
